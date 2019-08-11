@@ -59,6 +59,14 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <!-- The tutorials use JUnit test cases to illustrate usage -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
