@@ -19,8 +19,7 @@ public class RegisterView extends LoginView {
         labelLoginInfo.setText("Rejestracja");
         buttonLogIn.setText("Rejestracja");
 
-        buttonLogIn.addClickListener(buttonClickEvent ->
-                HibernateConnect.saveLoginAndPassword(textFieldLogin.getValue(), passwordFieldPassword.getValue(), passwordFieldCheckPassword.getValue()));
+        buttonLogIn.addClickListener(buttonClickEvent -> HibernateConnect.saveLoginAndPassword(textFieldLogin.getValue(), passwordFieldPassword.getValue(), passwordFieldCheckPassword.getValue()));
 
         horizontalLayoutPasswordCheck.add(labelPasswordCheck, passwordFieldCheckPassword);
         horizontalLayoutTopRightButtons.remove(buttonTopRegister);

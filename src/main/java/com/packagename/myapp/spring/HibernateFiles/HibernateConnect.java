@@ -24,13 +24,13 @@ public class HibernateConnect {
         }
     }
 
-    public static void setAll(String login, String haslo){
+    private static void setAll(String login, String password){
         UserLoginAndPassword userLoginAndPassword = new UserLoginAndPassword();
 
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         userLoginAndPassword.setLogin(login);
-        userLoginAndPassword.setPassword(haslo);
+        userLoginAndPassword.setPassword(password);
         session.save(userLoginAndPassword);
         session.getTransaction().commit();
         session.close();
